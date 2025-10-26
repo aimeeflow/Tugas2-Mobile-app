@@ -6,8 +6,8 @@ app = Flask(__name__)
 def home():
     return "Hi! This is Aimee trying to work on Mobile App Backend!"
 
-@app.route('/api/products')
-def products():
+@app.route('/api/participants')
+def participants():
     data = [
         {"id": 1, "nama": "Aimee", "email": "aimee@mail.com"},
         {"id": 2, "nama": "Juni", "email": "juni@mail.com"},
@@ -16,4 +16,5 @@ def products():
     return jsonify(data)
 
 if __name__ == '__main__':
+
     app.run(host='0.0.0.0', port=5000)
