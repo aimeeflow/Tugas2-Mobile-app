@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  mobileapp:
+    build: .
+    container_name: mobile-app-container
+    ports:
+      - "5000:5000"
+    restart: always
